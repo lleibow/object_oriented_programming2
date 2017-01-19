@@ -45,3 +45,7 @@ cristina.greeting
 #Calling teach on Chris and learn on Cristina
 puts "Chris says #{chris.teach}"
 puts "Cristina says #{cristina.learn}"
+
+#Calling teach on Student
+puts cristina.teach
+  #This won't work because the teach method doesn't exist in the student class. It also doesn't exist in student's parent class, Person. Although student and teacher are both under the Person class, the instance method teach can only be run on new instances of Instructor.
