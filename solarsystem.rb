@@ -11,7 +11,7 @@ class System
   end
 
   def total_mass
-    bodies.reduce(:+)
+    @@total_mass = bodies.reduce(:+)
     end
 
 end
@@ -22,3 +22,14 @@ puts milky.add(15)
 
 #total_mass test
 puts milky.total_mass
+
+#Make Body class
+
+class Body
+  attr_reader :name, :mass
+
+  def initialize(name, mass)
+    @name=name
+    @mass=mass
+  end
+end
