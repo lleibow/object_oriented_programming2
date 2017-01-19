@@ -25,11 +25,29 @@ puts milky.total_mass
 
 #Make Body class
 
-class Body
-  attr_reader :name, :mass
+      class Body<System
+        attr_reader :name, :mass
 
-  def initialize(name, mass)
-    @name=name
-    @mass=mass
-  end
-end
+        def initialize(name, mass)
+          @name=name
+          @mass=mass
+        end
+      end
+
+            class Planet<Body
+              def initialize(name, mass)
+                super (name, mass)
+              end
+            end
+
+            class Star<Body
+              def initialize(name, mass)
+                super (name, mass)
+              end
+            end
+
+            class Moon<Body
+              def initialize(name, mass)
+                super (name, mass)
+              end
+            end
