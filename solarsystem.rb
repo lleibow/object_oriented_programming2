@@ -45,6 +45,7 @@ puts milky.total_mass
             class Star<Body
               def initialize(name, mass)
                 super (name, mass)
+                @type = type
               end
             end
 
