@@ -1,5 +1,4 @@
-class System(bodies [])
-
-
-
+class System
+  def initialize (bodies [])
+  end
 end
