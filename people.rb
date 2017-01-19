@@ -34,5 +34,10 @@ end
 #Practise running greeting
 laura=Person.new("Laura")
 
-#Practise running greeting on Instructor chris
+#Initializing and running greeting on Instructor chris
 chris=Instructor.new("Chris")
+chris.greeting
+
+#Initializing and running greeting on Cristina
+cristina=Student.new("Cristina")
+cristina.greeting
