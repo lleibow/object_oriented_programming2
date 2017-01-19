@@ -5,4 +5,7 @@ class Student
 end
 
 class Instructor
+  def teach
+    puts "Everything in Rucy is an Object"
+  end
 end
