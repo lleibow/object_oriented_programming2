@@ -34,23 +34,32 @@ puts milky.total_mass
         end
       end
 
-            class Planet<Body
+            class Planet < Body
+              attr_reader :day, :year
               def initialize(name, mass, day, year)
-                super (name, mass)
+                super(name, mass)
                 @day=day
                 @year=year
               end
             end
 
-            class Star<Body
-              def initialize(name, mass)
-                super (name, mass)
+            class Star < Body
+              attr_reader :type
+              def initialize(name, mass, type)
+                super(name, mass)
                 @type = type
               end
             end
 
-            class Moon<Body
-              def initialize(name, mass)
-                super (name, mass)
+            class Moon < Body
+                attr_reader :month, :planet
+              def initialize(name, mass, month, planet)
+                super(name, mass)
+                @month = month
+                @planet= planet
               end
             end
+
+#add total mass with new instance of Moon
+poop=Moon.new("Poop", 50, month, planet)
+puts poop.total_mass
