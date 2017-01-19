@@ -11,9 +11,14 @@ class System
   end
 
   def total_mass
-  end
+    bodies.reduce(:+)
+    end
+
 end
 
 #add test
-milky=System.new(["poop", "peep"])
-puts milky.add("barf")
+milky=System.new([4, 9])
+puts milky.add(15)
+
+#total_mass test
+puts milky.total_mass
