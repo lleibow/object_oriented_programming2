@@ -12,7 +12,7 @@ end
 
 class Student < Person
   def learn
-    puts "I get it"
+    return "I get it"
   end
 
   def greeting
@@ -23,7 +23,7 @@ end
 
 class Instructor < Person
   def teach
-    puts "Everything in Rucy is an Object"
+    return "Everything in Rucy is an Object"
   end
 
   def greeting
@@ -41,3 +41,7 @@ chris.greeting
 #Initializing and running greeting on Cristina
 cristina=Student.new("Cristina")
 cristina.greeting
+
+#Calling teach on Chris and learn on Cristina
+puts "Chris says #{chris.teach}"
+puts "Cristina says #{cristina.learn}"
